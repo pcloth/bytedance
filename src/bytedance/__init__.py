@@ -6,7 +6,7 @@ import json, time, requests, os, hmac, hashlib
 from .base import ByteDanceError, Map
 
 DEFAULT_DIR = os.getenv("HOME", os.getcwd())
-
+__version__ = "0.1.1"
 try:
     # 用redis来多系统共用access_token
     import redis
@@ -23,6 +23,7 @@ class ByteDance(object):
         self.app_id = config['app_id']
         self.app_secret = config['app_secret']
         self.session = requests.Session()
+        self.__version__ = __version__
 
         if config.get('mch_id'):
             # 收银台支付相关
@@ -59,7 +60,7 @@ class ByteDance(object):
             # 获取二维码等接口，返回原始内容
             return resp
         if data.error:
-            msg = "%(error)d %(message)s" % data
+            msg = "error:%(error)d , message:%(message)s" % data
             raise ByteDanceError(msg)
         return data
 
