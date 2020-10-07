@@ -6,7 +6,7 @@ import json, time, requests, os, hmac, hashlib
 from .base import ByteDanceError, Map
 
 DEFAULT_DIR = os.getenv("HOME", os.getcwd())
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 try:
     # 用redis来多系统共用access_token
     import redis
@@ -32,8 +32,8 @@ class ByteDance(object):
             self.mch_app_id = config['mch_app_id']
 
         # 获取token方式，auto是redis优先，file是强制文件模式，redis是强制redis模式
-        access_token_type = config.get('access_token_type') or 'auto'
-        if access_token_type not in ['auto', 'redis', 'file']:
+        self.access_token_type = config.get('access_token_type') or 'auto'
+        if self.access_token_type not in ['auto', 'redis', 'file']:
             raise ByteDanceError('access_token_type只能是auto/redis/file三选一')
         if config.get('redis'):
             self.redis_conf = config.get('redis')
@@ -102,7 +102,7 @@ class ByteDance(object):
         timestamp = time.time()
         if redis and self.access_token_type in ['auto','redis']:
             # redis 模式，用appid来标记token
-            r = redis.Redis(**redis_conf)
+            r = redis.Redis(**self.redis_conf)
             access_token = r.get(f'{self.app_id}_access_token')
             access_token_time = r.get(f'{self.app_id}_access_token_invalidtime')
             if not access_token or int(float(access_token_time)) < timestamp:
