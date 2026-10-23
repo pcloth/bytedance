@@ -153,7 +153,9 @@ finally:
 
 网络、HTTP 状态和业务错误统一抛出 `ByteDanceError`。业务请求默认不自动重试。JSON 响应支持字典和属性访问，列表内部也递归转换为 `Map`；与 `items/get` 等 dict 方法重名的字段使用下标访问。二维码及账单等二进制结果保留 `requests.Response`。
 
-`environment='sandbox'` 仅允许官方已注明沙盒支持的接口；未注明支持的接口明确报错。可注入 `requests.Session`；支持 `with ByteDance(...) as app:` 自动关闭。
+`environment='sandbox'` 仅允许官方已注明沙盒支持的接口；未注明支持的接口会在获取凭证前明确报错。可注入 `requests.Session`；文件上传会自动生成匹配请求体的 Content-Type，不修改共享 Session 的默认头。支持 `with ByteDance(...) as app:` 自动关闭。
+
+`api_domains` 可以按域名配置代理或测试地址，统一应用于新旧接口及获取凭证入口；每个请求只替换一次。
 
 ## 开发与验证
 
@@ -165,4 +167,4 @@ python tools/build_catalog.py
 
 官方文档采集结果在 `docs/official_catalog.json`；人工核对差异和官方 SDK 交叉证据在 `docs/contract_overrides.json`。生成器输出静态独立方法、随包契约及接口索引。原始 HTML 只缓存到系统临时目录，不发布整篇官方文档。
 
-离线测试覆盖全部生成方法的请求分发、独立官方契约、旧调用、缓存并发及官方签名向量。1.0.0 wheel 已在 Python 3.6 / 3.8 / 3.12 实际安装，并分别通过全部 44 项测试，另配置相同版本的 CI 矩阵。详见 [验证记录](docs/VALIDATION.md)。未提供测试应用凭证，因此不把离线通过等同于平台实际联调成功。
+离线测试覆盖生成方法的请求分发、独立官方契约、旧调用、缓存并发及官方签名向量。反向回归发现的 4 个缺陷已修复，并保留全部回归断言；当前完整测试为 55 项。修复后的源码和 wheel 验证结果见 [验证记录](docs/VALIDATION.md)，问题与修复说明见 [回归记录](docs/REGRESSION_FINDINGS.md)。另配置 Python 3.6 / 3.8 / 3.12 的 CI 矩阵。未提供测试应用凭证，离线测试不等同于平台实际联调。

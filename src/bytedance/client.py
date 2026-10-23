@@ -82,15 +82,14 @@ class ByteDance(LegacyMethods):
         if kind == "client":
             domain = ("https://open-sandbox.douyin.com" if self.environment == "sandbox"
                       else "https://open.douyin.com")
-            response = self._request("POST", self.api_domains.get(domain, domain) + "/oauth/client_token/",
+            response = self._request("POST", domain + "/oauth/client_token/",
                                      body={"client_key": self.app_id, "client_secret": self.app_secret,
                                            "grant_type": "client_credential"})
             return response.get("data", response)
         raise ByteDanceError("Unsupported cached credential: " + kind)
 
     def _get_access_token(self):
-        domain = self.api_uri.rsplit("/api", 1)[0]
-        response = self._request("POST", self.api_domains.get(domain, domain) + "/api/apps/v2/token", body={
+        response = self._request("POST", self.api_uri + "/apps/v2/token", body={
             "appid": self.app_id, "secret": self.app_secret, "grant_type": "client_credential"})
         return response.get("data", response)
 
@@ -112,8 +111,7 @@ class ByteDance(LegacyMethods):
         domain = "https://open.douyin.com"
         if self.environment == "sandbox":
             raise ByteDanceError("Subscription notifications do not document sandbox support")
-        return self._request("POST", self.api_domains.get(domain, domain)
-                             + "/api/notification/v2/subscription/notify_user/", body=body,
+        return self._request("POST", domain + "/api/notification/v2/subscription/notify_user/", body=body,
                              headers={"access-token": self.client_token})
 
     def signed_order(self, data, timestamp=None, nonce=None):
@@ -146,6 +144,13 @@ class ByteDance(LegacyMethods):
             spec = CONTRACTS[name]
         except KeyError as exc:
             raise ByteDanceError("Unknown API: " + name) from exc
+        # Reject unavailable environments before consulting any token cache or
+        # provider; a cold cache must not cause an unsupported network request.
+        domain = spec["domain"]
+        if self.environment == "sandbox":
+            if not spec.get("sandbox"):
+                raise ByteDanceError("Sandbox support is not documented for " + name)
+            domain = "https://open-sandbox.douyin.com"
         body = copy.deepcopy(body) if body is not None else {}
         query = copy.deepcopy(query) if query is not None else {}
         headers = CaseInsensitiveDict(headers or {})
@@ -166,12 +171,6 @@ class ByteDance(LegacyMethods):
                 bucket[field] = self._application_credential(auth["kind"])
         elif token is not None:
             raise ByteDanceError("This API has no token parameter")
-        domain = spec["domain"]
-        if self.environment == "sandbox":
-            if not spec.get("sandbox"):
-                raise ByteDanceError("Sandbox support is not documented for " + name)
-            domain = "https://open-sandbox.douyin.com"
-        domain = self.api_domains.get(domain, domain)
         path = spec["path"]
         for key, value in (path_params or {}).items():
             path = path.replace("{" + key + "}", quote(str(value), safe=""))
@@ -198,10 +197,20 @@ class ByteDance(LegacyMethods):
 
     def _request(self, method, url, body=None, query=None, headers=None, files=None,
                  encoding="json", raw=None, rsa=False, binary=False, error_paths=None):
+        # Resolve once at the transport boundary so legacy methods, application
+        # credentials and generated APIs all honor the same mapping.
+        parsed = urlsplit(url)
+        origin = "{}://{}".format(parsed.scheme, parsed.netloc)
+        if origin in self.api_domains:
+            url = self.api_domains[origin].rstrip("/") + url[len(origin):]
         headers = CaseInsensitiveDict(headers or {})
         data = raw
         if encoding == "multipart" and not files:
             raise ByteDanceError("This API requires multipart files; pass files={field: (filename, bytes, content_type)}")
+        if files is not None:
+            # None suppresses both request and inherited Session headers during
+            # merging, allowing requests to generate the matching boundary.
+            headers["Content-Type"] = None
         if raw is None and (body or method.upper() not in ("GET", "HEAD")):
             if encoding == "json" and files is None:
                 data = json_bytes({} if body is None else body)
@@ -210,7 +219,7 @@ class ByteDance(LegacyMethods):
                 data = {} if body is None else body
                 if files is not None or encoding == "multipart":
                     # requests must generate the boundary matching its payload.
-                    headers.pop("Content-Type", None)
+                    headers["Content-Type"] = None
                 else:
                     headers.setdefault("Content-Type", "application/x-www-form-urlencoded")
         request = requests.Request(method, url, params=query, data=data, headers=headers, files=files)
@@ -238,20 +247,25 @@ class ByteDance(LegacyMethods):
                 return response
             raise ByteDanceError("Expected a JSON response", response=response,
                                 status_code=response.status_code)
-        if response.status_code >= 300:
-            raise self._error(payload, response, "HTTP {}".format(response.status_code))
-        paths = error_paths if error_paths is not None else [
+        failure_message = ("HTTP {}".format(response.status_code) if response.status_code >= 300
+                           else "API request failed")
+        default_error_paths = [
             "err_no", "error_no", "error", "errcode", "error_code", "code",
             "data.error_code", "extra.error_code", "extra.sub_error_code"]
+        paths = list(error_paths) if error_paths is not None else default_error_paths
+        if response.status_code >= 300 and error_paths is not None:
+            # Gateway failures may not use the endpoint's normal JSON schema.
+            paths.extend(path for path in default_error_paths if path not in paths)
         if isinstance(payload, dict):
             for path in paths:
                 current = payload
                 for part in path.split("."):
                     current = current.get(part) if isinstance(current, dict) else None
                 if current is not None and not isinstance(current, (dict, list)) and current not in (0, "0", ""):
-                    raise self._error(payload, response, "API request failed", current, path)
-            return Map(payload)
-        return Map._convert(payload)
+                    raise self._error(payload, response, failure_message, current, path)
+        if response.status_code >= 300:
+            raise self._error(payload, response, failure_message)
+        return Map(payload) if isinstance(payload, dict) else Map._convert(payload)
 
     @staticmethod
     def _error(payload, response, default, code=None, error_path=None):
