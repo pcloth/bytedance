@@ -1,0 +1,3841 @@
+{
+  "source": "https://raw.githubusercontent.com/bytedance/douyin-openapi-sdk-go/main/client/client.go",
+  "source_sha256": "ee759cde6be040f742d4cb793e74565e02af3bab4f9cd99a8488927c66a2290d",
+  "checked_at": "2026-10-23",
+  "endpoints": [
+    {
+      "operation": "GetCouponMetaStatistics",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/get_coupon_meta_statistics/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemListComment",
+      "method": "GET",
+      "path": "/api/apps/v1/item/list_comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DouyinQueryUserTask",
+      "method": "POST",
+      "path": "/api/apps/v1/douyin/query_user_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ShareQueryUserTask",
+      "method": "POST",
+      "path": "/api/apps/v1/share/query_user_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemBcGetPlay",
+      "method": "GET",
+      "path": "/api/apps/v1/item_bc/get_play/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaveLiveOrientedPlan",
+      "method": "POST",
+      "path": "/api/match/v2/poi/save_live_oriented_plan/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TemplateList",
+      "method": "GET",
+      "path": "/api/apps/v1/template/list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ListPlanBySpuid",
+      "method": "POST",
+      "path": "/api/match/v2/poi/list_plan_by_spuid/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateTalentCouponStatus",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/update_talent_coupon_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CommonPlanTalentDetail",
+      "method": "POST",
+      "path": "/api/match/v2/poi/common_plan_talent_detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemGetBase",
+      "method": "GET",
+      "path": "/api/apps/v1/item/get_base/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitChangeLockStatus",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/change_lock_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoIdToOpenItemId",
+      "method": "POST",
+      "path": "/api/apps/v1/convert_video_id/video_id_to_open_item_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ConvertVideoIdVideoIdToOpenItemId",
+      "method": "POST",
+      "path": "/api/apps/convert_video_id/video_id_to_open_item_id",
+      "domain": "https://developer.toutiao.com"
+    },
+    {
+      "operation": "QueryActivityMetaData",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/query_activity_meta_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateTalentCouponStock",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/update_talent_coupon_stock/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemGetPlay",
+      "method": "GET",
+      "path": "/api/apps/v1/item/get_play/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoBcQuery",
+      "method": "POST",
+      "path": "/api/apps/v1/video_bc/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemBcGetShare",
+      "method": "GET",
+      "path": "/api/apps/v1/item_bc/get_share/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthBusinessScopes",
+      "method": "POST",
+      "path": "/oauth/business_scopes/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfillmentDeliveryVerify",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/fulfillment/delivery_verify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SendCouponToDesignatedUser",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/send_coupon_to_designated_user/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponCreateDeveloperActivity",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/create_developer_activity/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderCreateOrder",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/order/create_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V2CouponCreateCouponMeta",
+      "method": "POST",
+      "path": "/api/promotion/v2/coupon/create_coupon_meta/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemBcGetBase",
+      "method": "GET",
+      "path": "/api/apps/v1/item_bc/get_base/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitQueryCertificateInfo",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/query_certificate_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfillmentQueryUserCertificates",
+      "method": "POST",
+      "path": "/api/trade/v2/fulfillment/query_user_certificates/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeleteOrientedPlanTalent",
+      "method": "POST",
+      "path": "/api/match/v2/poi/delete_oriented_plan_talent/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetBillDownloadUrl",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/get_bill_download_url/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CommonPlanSellDetail",
+      "method": "POST",
+      "path": "/api/match/v2/poi/common_plan_sell_detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfillmentVerifyCancel",
+      "method": "POST",
+      "path": "/api/trade/v2/fulfillment/verify_cancel/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V2Token",
+      "method": "POST",
+      "path": "/api/apps/v2/token",
+      "domain": "https://developer.toutiao.com"
+    },
+    {
+      "operation": "ActivityCreatePromotionActivity",
+      "method": "POST",
+      "path": "/api/promotion/v2/activity/create_promotion_activity/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfillmentOrderCanUse",
+      "method": "POST",
+      "path": "/api/trade/v2/fulfillment/order_can_use/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V2FileUploadMaterial",
+      "method": "POST",
+      "path": "/api/apps/v2/file/upload_material/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiSaveCommonPlan",
+      "method": "POST",
+      "path": "/api/match/v2/poi/save_common_plan/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FansList",
+      "method": "GET",
+      "path": "/im/group/fans/list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitUpdateMerchantConf",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/update_merchant_conf/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateCouponMetaStock",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/update_coupon_meta_stock/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaveVideoOrientedPlan",
+      "method": "POST",
+      "path": "/api/match/v2/poi/save_video_oriented_plan/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponSetTalentCoupon",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/set_talent_coupon/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemGetComment",
+      "method": "GET",
+      "path": "/api/apps/v1/item/get_comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitQueryText",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/query_text/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrientedPlanTalentDetail",
+      "method": "POST",
+      "path": "/api/match/v2/poi/oriented_plan_talent_detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponModifyCouponMeta",
+      "method": "POST",
+      "path": "/api/promotion/v2/coupon/modify_coupon_meta/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ShareCreateTask",
+      "method": "POST",
+      "path": "/api/apps/v1/share/create_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfillmentPushDelivery",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/fulfillment/push_delivery/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitUpdateMerchantPath",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/update_merchant_path/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryUserInteractTask",
+      "method": "POST",
+      "path": "/api/apps/v1/douyin/query_user_interact_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthAccessToken",
+      "method": "POST",
+      "path": "/oauth/access_token/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DouyinCreateInteractTask",
+      "method": "POST",
+      "path": "/api/apps/v1/douyin/create_interact_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryItemOrderInfo",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/order/query_item_order_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponQueryCouponMeta",
+      "method": "POST",
+      "path": "/api/promotion/v2/coupon/query_coupon_meta/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemGetShare",
+      "method": "GET",
+      "path": "/api/apps/v1/item/get_share/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryCommonPlanTalentList",
+      "method": "POST",
+      "path": "/api/match/v2/poi/query_common_plan_talent_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ActivityQueryPromotionActivity",
+      "method": "POST",
+      "path": "/api/promotion/v2/activity/query_promotion_activity/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ActivityModifyPromotionActivity",
+      "method": "POST",
+      "path": "/api/promotion/v2/activity/modify_promotion_activity/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiOrientedPlanDetail",
+      "method": "POST",
+      "path": "/api/match/v2/poi/oriented_plan_detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CensorImage",
+      "method": "POST",
+      "path": "/api/apps/v1/censor/image/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetCouponReceiveInfo",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/get_coupon_receive_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthRefreshToken",
+      "method": "POST",
+      "path": "/oauth/refresh_token/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitPushServiceDone",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/push_service_done/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V2Jscode2session",
+      "method": "POST",
+      "path": "/api/apps/v2/jscode2session",
+      "domain": "https://developer.toutiao.com"
+    },
+    {
+      "operation": "OauthRenewRefreshToken",
+      "method": "POST",
+      "path": "/oauth/renew_refresh_token/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiOrientedPlanList",
+      "method": "POST",
+      "path": "/api/match/v2/poi/oriented_plan_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderQueryCps",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/order/query_cps/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthBusinessToken",
+      "method": "POST",
+      "path": "/oauth/business_token/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemGetLike",
+      "method": "GET",
+      "path": "/api/apps/v1/item/get_like/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DouyinCreateTask",
+      "method": "POST",
+      "path": "/api/apps/v1/douyin/create_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdatePromotionActivityStatus",
+      "method": "POST",
+      "path": "/api/promotion/v2/activity/update_promotion_activity_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateCommonPlanStatus",
+      "method": "POST",
+      "path": "/api/match/v2/poi/update_common_plan_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemReplyComment",
+      "method": "POST",
+      "path": "/api/apps/v1/item/reply_comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ActivityQueryBindedUser",
+      "method": "POST",
+      "path": "/api/promotion/v2/activity/query_binded_user/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V2SearchVideo",
+      "method": "GET",
+      "path": "/dy_open_api/v2/search/video/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthClientToken",
+      "method": "POST",
+      "path": "/oauth/client_token/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CommonPlanTalentMediaList",
+      "method": "POST",
+      "path": "/api/match/v2/poi/common_plan_talent_media_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateCouponMetaStatus",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/update_coupon_meta_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitVerifyLocalCertificates",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/verify_local_certificates/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OpenItemIdToEncryptId",
+      "method": "POST",
+      "path": "/api/apps/v1/convert_video_id/open_item_id_to_encrypt_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QaOpenapiSdkPostCommon",
+      "method": "POST",
+      "path": "/api/qa_openapi_test/v1/qa_openapi_sdk/post_common/",
+      "domain": "https://open-platform-qa.byted.org"
+    },
+    {
+      "operation": "ItemBcGetComment",
+      "method": "GET",
+      "path": "/api/apps/v1/item_bc/get_comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponGetTalentCoupon",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/get_talent_coupon/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1GetPhonenumberInfo",
+      "method": "POST",
+      "path": "/api/apps/v1/get_phonenumber_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ToolkitButtonWhiteSetting",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/toolkit/button_white_setting/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponBatchConsumeCoupon",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/batch_consume_coupon/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BookUserCancelBook",
+      "method": "POST",
+      "path": "/api/apps/trade/v2/book/user_cancel_book/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponDeleteCouponMeta",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/delete_coupon_meta/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoQuery",
+      "method": "POST",
+      "path": "/api/apps/v1/video/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BatchRollbackConsumeCoupon",
+      "method": "POST",
+      "path": "/api/promotion/v1/coupon/batch_rollback_consume_coupon/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateOrientedPlanStatus",
+      "method": "POST",
+      "path": "/api/match/v2/poi/update_oriented_plan_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemListCommentReply",
+      "method": "GET",
+      "path": "/api/apps/v1/item/list_comment_reply/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "StockSync",
+      "method": "POST",
+      "path": "/life/goods/stock/sync/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthRefreshBizToken",
+      "method": "POST",
+      "path": "/oauth/refresh_biz_token/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ItemBcGetLike",
+      "method": "GET",
+      "path": "/api/apps/v1/item_bc/get_like/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryTaskVideoDailyData",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_task_video_daily_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoMountModifyConfig",
+      "method": "POST",
+      "path": "/aweme/apps/v1/video_mount/modify_config/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SubscriptionDeleteAppTpl",
+      "method": "POST",
+      "path": "/api/notification/v2/subscription/delete_app_tpl/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UrlQuerySchemaQuota",
+      "method": "POST",
+      "path": "/api/apps/v1/url/query_schema_quota/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SubscriptionQueryAppTpl",
+      "method": "GET",
+      "path": "/api/notification/v2/subscription/query_app_tpl/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskCreateVideo",
+      "method": "POST",
+      "path": "/api/apps/v2/task/create_video/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetAwemeBindTemplateInfo",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/get_aweme_bind_template_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxQueryAppTaskId",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_app_task_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CardDelete",
+      "method": "POST",
+      "path": "/api/card/delete",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "UrlLinkQueryQuota",
+      "method": "POST",
+      "path": "/api/apps/v1/url_link/query_quota/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SearchCheckSubService",
+      "method": "POST",
+      "path": "/aweme/apps/v1/search/check_sub_service/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FeedbackGetFeedbackList",
+      "method": "POST",
+      "path": "/api/apps/v1/feedback/get_feedback_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserGetProfile",
+      "method": "GET",
+      "path": "/api/apps/v1/user/get_profile/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UrlGenerateSchema",
+      "method": "POST",
+      "path": "/api/apps/v1/url/generate_schema/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AuthGetRelatedId",
+      "method": "POST",
+      "path": "/api/apps/v1/auth/get_related_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QrcodeCreate",
+      "method": "POST",
+      "path": "/api/apps/v1/qrcode/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QuerySearchTagList",
+      "method": "GET",
+      "path": "/api/apps/v1/capacity/query_search_tag_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserGetFans",
+      "method": "GET",
+      "path": "/api/apps/v1/user/get_fans/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxQueryBillLink",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_bill_link/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserGetComment",
+      "method": "GET",
+      "path": "/api/apps/v1/user/get_comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserGetItem",
+      "method": "GET",
+      "path": "/api/apps/v1/user/get_item/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoMountQueryConfigHistory",
+      "method": "POST",
+      "path": "/aweme/apps/v1/video_mount/query_config_history/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CardImageDelete",
+      "method": "POST",
+      "path": "/api/file/card_image/delete",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "UserBcGetShare",
+      "method": "GET",
+      "path": "/api/apps/v1/user_bc/get_share/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CardUpdate",
+      "method": "POST",
+      "path": "/api/card/update",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "QueryTaskVideoData",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_task_video_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetAwemeBindTemplateList",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/get_aweme_bind_template_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TrafficPermissionQuery",
+      "method": "GET",
+      "path": "/api/apps/v1/traffic_permission/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AdPlacementQuery",
+      "method": "GET",
+      "path": "/api/apps/v1/ad_placement/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserBcGetLike",
+      "method": "GET",
+      "path": "/api/apps/v1/user_bc/get_like/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DefaultSet",
+      "method": "POST",
+      "path": "/api/card/default/set",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "GroupCount",
+      "method": "GET",
+      "path": "/im/group/count/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SubscriptionNotifyUser",
+      "method": "POST",
+      "path": "/api/notification/v2/subscription/notify_user/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SettingSet",
+      "method": "POST",
+      "path": "/im/group/setting/set/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SubscriptionQueryUserSubscribe",
+      "method": "POST",
+      "path": "/api/notification/v2/subscription/query_user_subscribe/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskWriteoffVideo",
+      "method": "POST",
+      "path": "/api/apps/v2/task/writeoff_video/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FeedbackBatchReply",
+      "method": "POST",
+      "path": "/api/apps/v1/feedback/batch_reply/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ImportCardAdd",
+      "method": "POST",
+      "path": "/aweme/app/v1/import_card/add/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CardImageUpload",
+      "method": "POST",
+      "path": "/api/file/card_image/upload",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "AdPlacementUpdate",
+      "method": "POST",
+      "path": "/api/apps/v1/ad_placement/update/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacitySetSearchTag",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/set_search_tag/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetUserVideoList",
+      "method": "POST",
+      "path": "/aweme/v1/video/self/get_user_video_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskWriteoffLive",
+      "method": "POST",
+      "path": "/api/apps/v2/task/writeoff_live/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserGetShare",
+      "method": "GET",
+      "path": "/api/apps/v1/user/get_share/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserBcGetComment",
+      "method": "GET",
+      "path": "/api/apps/v1/user_bc/get_comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FansCreate",
+      "method": "POST",
+      "path": "/im/group/fans/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacityUnbindAwemeRelation",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/unbind_aweme_relation/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V2TaskboxQueryTaskInfo",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_task_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacityQueryAdIncome",
+      "method": "GET",
+      "path": "/api/apps/v3/capacity/query_ad_income/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryMaSubService",
+      "method": "GET",
+      "path": "/api/apps/v1/capacity/query_ma_sub_service/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AliasListAlias",
+      "method": "GET",
+      "path": "/aweme/apps/v1/alias/list_alias/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetAllCardsForUser",
+      "method": "POST",
+      "path": "/api/card/get_all_cards_for_user",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "TaskboxAddRoomTask",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/add_room_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserBcGetFans",
+      "method": "GET",
+      "path": "/api/apps/v1/user_bc/get_fans/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SubscriptionAddAppTpl",
+      "method": "POST",
+      "path": "/api/notification/v2/subscription/add_app_tpl/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SearchDeleteSubService",
+      "method": "POST",
+      "path": "/aweme/apps/v1/search/delete_sub_service/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1AppRegionModify",
+      "method": "POST",
+      "path": "/api/product/v1/app_region_modify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryCreatedTplList",
+      "method": "GET",
+      "path": "/api/notification/v2/subscription/query_created_tpl_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UrlLinkGenerate",
+      "method": "POST",
+      "path": "/api/apps/v1/url_link/generate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserBcGetItem",
+      "method": "GET",
+      "path": "/api/apps/v1/user_bc/get_item/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PrivacySettingAdd",
+      "method": "POST",
+      "path": "/api/apps/v1/privacy_setting/add/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SubscriptionCreateTpl",
+      "method": "POST",
+      "path": "/api/notification/v2/subscription/create_tpl/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacityDeleteAlias",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/delete_alias/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CardImageGet",
+      "method": "POST",
+      "path": "/api/file/card_image/get",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "VideoMountApplyPermission",
+      "method": "POST",
+      "path": "/aweme/apps/v1/video_mount/apply_permission/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacityBindAwemeRelation",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/bind_aweme_relation/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAdSettlementList",
+      "method": "GET",
+      "path": "/api/apps/v3/capacity/query_ad_settlement_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserBcGetProfile",
+      "method": "GET",
+      "path": "/api/apps/v1/user_bc/get_profile/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PrivacySettingQuery",
+      "method": "POST",
+      "path": "/api/apps/v1/privacy_setting/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CardSet",
+      "method": "POST",
+      "path": "/api/card/set",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "CapacityModifyAlias",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/modify_alias/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SubscriptionQueryTplList",
+      "method": "GET",
+      "path": "/api/notification/v2/subscription/query_tpl_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TrafficPermissionOpen",
+      "method": "POST",
+      "path": "/api/apps/v1/traffic_permission/open/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SearchUploadSitemap",
+      "method": "POST",
+      "path": "/api/apps/v1/search/upload_sitemap/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AliasCreateAlias",
+      "method": "POST",
+      "path": "/aweme/apps/v1/alias/create_alias/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CardGet",
+      "method": "POST",
+      "path": "/api/card/get",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "CreateMaSubService",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/create_ma_sub_service/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryVideoSumData",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_video_sum_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ImportCardGet",
+      "method": "POST",
+      "path": "/aweme/app/v1/import_card/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DevtoolGetMountLegal",
+      "method": "GET",
+      "path": "/api/apps/v1/devtool/get_mount_legal/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UrlLinkQueryInfo",
+      "method": "POST",
+      "path": "/api/apps/v1/url_link/query_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1AppRegionDelete",
+      "method": "POST",
+      "path": "/api/product/v1/app_region_delete/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FeedbackGetReplyResult",
+      "method": "POST",
+      "path": "/api/apps/v1/feedback/get_reply_result/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SettingDisable",
+      "method": "POST",
+      "path": "/im/group/setting/disable/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxUpdateTask",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/update_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RtEcpmQuery",
+      "method": "POST",
+      "path": "/api/traffic/v2/rt_ecpm/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AdPlacementAdd",
+      "method": "POST",
+      "path": "/api/apps/v1/ad_placement/add/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetUserEncryptKey",
+      "method": "POST",
+      "path": "/api/apps/v1/get_user_encrypt_key/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SearchDeleteIndex",
+      "method": "POST",
+      "path": "/api/apps/v1/search/delete_index/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryApplyPermissionStatus",
+      "method": "POST",
+      "path": "/aweme/apps/v1/video_mount/query_apply_permission_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoMountQueryConfig",
+      "method": "POST",
+      "path": "/aweme/apps/v1/video_mount/query_config/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UrlQuerySchema",
+      "method": "POST",
+      "path": "/api/apps/v1/url/query_schema/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AuditGet",
+      "method": "GET",
+      "path": "/im/group/enter/audit/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserGetLike",
+      "method": "GET",
+      "path": "/api/apps/v1/user/get_like/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1AppRegionAdd",
+      "method": "POST",
+      "path": "/api/product/v1/app_region_add/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetAwemeRelationBindQrcode",
+      "method": "GET",
+      "path": "/api/apps/v1/capacity/get_aweme_relation_bind_qrcode/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AuditSet",
+      "method": "POST",
+      "path": "/im/group/enter/audit/set/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxUpdateStatus",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/update_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAwemeRelationList",
+      "method": "GET",
+      "path": "/api/apps/v1/capacity/query_aweme_relation_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxAddTask",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/add_task/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryDealDataWithConversion",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_deal_data_with_conversion/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QuerySmallHomeOverviewData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_small_home_overview_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperRefundAuditCallback",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/refund_audit_callback/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ConfigRegisterMaApp",
+      "method": "POST",
+      "path": "/api/ecom/v1/config/register_ma_app/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AddAppTestRelation",
+      "method": "POST",
+      "path": "/api/industry/v1/solution/add_app_test_relation/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasGetAppMerchant",
+      "method": "POST",
+      "path": "/api/apps/ecpay/v3/saas/get_app_merchant/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQuerySignOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/query_sign_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperCreateSignPay",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/create_sign_pay/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SendMsg",
+      "method": "POST",
+      "path": "/im/send/msg/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DataAnalysisQueryPageData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_page_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V3Bills",
+      "method": "POST",
+      "path": "/api/apps/v3/bills/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DataAnalysisQueryRetentionData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_retention_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryComponentWithData",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_component_with_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQueryRefund",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/query_refund/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RecallMsg",
+      "method": "POST",
+      "path": "/im/recall/msg/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperCreateRefund",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/create_refund/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FunctionConfigQueryStatus",
+      "method": "GET",
+      "path": "/api/apps/v1/developer_toolbox/image_material/function_config/query_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryProductDealData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_product_deal_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryRealTimeUserData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_real_time_user_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateSimpleQrBind",
+      "method": "POST",
+      "path": "/api/apps/v2/capacity/update_simple_qr_bind/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MessageResources",
+      "method": "GET",
+      "path": "/api/im/message/resources/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryShortLiveDataWithId",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_short_live_data_with_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAwemeVideoKeywordList",
+      "method": "GET",
+      "path": "/api/apps/v1/capacity/query_aweme_video_keyword_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQueryPayOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/query_pay_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQueryCps",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/query_cps/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacityQueryCapacityList",
+      "method": "GET",
+      "path": "/api/apps/v1/capacity/query_capacity_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryComponentWithDetail",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_component_with_detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperFinishAuthOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/finish_auth_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryDealOverviewData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_deal_overview_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeleteAppTestRelation",
+      "method": "POST",
+      "path": "/api/industry/v1/solution/delete_app_test_relation/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ImDelAppletTemplate",
+      "method": "POST",
+      "path": "/api/douyin/v1/im/del_applet_template/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MessageGetUserMessage",
+      "method": "GET",
+      "path": "/api/apps/v1/message/get_user_message/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QuerySimpleQrBindList",
+      "method": "GET",
+      "path": "/api/apps/v2/capacity/query_simple_qr_bind_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasQueryMerchantStatus",
+      "method": "POST",
+      "path": "/api/apps/ecpay/v3/saas/query_merchant_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQuerySignRefund",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/query_sign_refund/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FundBills",
+      "method": "POST",
+      "path": "/api/apps/v3/fund/bills/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasAddSubMerchant",
+      "method": "POST",
+      "path": "/api/apps/ecpay/v3/saas/add_sub_merchant/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DataAnalysisQueryVideoData",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_video_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryUserPortraitData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_user_portrait_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperOrderQuery",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/order_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQueryAuthOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/query_auth_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DataAnalysisQueryBehaviorData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_behavior_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperSettleCreate",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/settle_create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DataAnalysisQueryClientData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_client_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryComponentWithSource",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_component_with_source/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ConfigLimitOpPoint",
+      "method": "POST",
+      "path": "/api/ecom/v1/config/limit_op_point/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasMerchantWithdraw",
+      "method": "POST",
+      "path": "/api/apps/ecpay/saas/merchant_withdraw/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAppTestRelation",
+      "method": "POST",
+      "path": "/api/industry/v1/solution/query_app_test_relation/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CustomizationQueryStatus",
+      "method": "POST",
+      "path": "/api/ecom/v1/customization/query_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperRefundQuery",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/refund_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQueryAdmissibleAuth",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/query_admissible_auth/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CategoryGetAuditCategories",
+      "method": "GET",
+      "path": "/api/apps/v1/category/get_audit_categories/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PlayletBusinessUpload",
+      "method": "POST",
+      "path": "/api/apps/v1/playlet_business/upload/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryVideoWithSource",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_video_with_source/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AddAwemeVideoKeyword",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/add_aweme_video_keyword/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasAddMerchant",
+      "method": "POST",
+      "path": "/api/apps/ecpay/v3/saas/add_merchant/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperSettleQuery",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/settle_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ImageMaterialUpload",
+      "method": "POST",
+      "path": "/api/apps/v1/developer_toolbox/image_material/upload/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryShortLiveIdWithAwemeid",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_short_live_id_with_awemeid/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AuthorizeStatus",
+      "method": "POST",
+      "path": "/im/authorize/status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ImGetAppletTemplate",
+      "method": "POST",
+      "path": "/api/douyin/v1/im/get_applet_template/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperPreNotify",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/pre_notify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperCancelAuthOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/cancel_auth_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperClosePayOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/close_pay_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperCreatePayOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/create_pay_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MsgGroup",
+      "method": "POST",
+      "path": "/im/send/msg/group/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryVideoDealData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_video_deal_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasCreateMerchant",
+      "method": "POST",
+      "path": "/api/apps/ecpay/v3/saas/create_merchant/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacityApplyCapacity",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/apply_capacity/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UpdateSimpleQrBindStatus",
+      "method": "POST",
+      "path": "/api/apps/v2/capacity/update_simple_qr_bind_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryComponentWithOverview",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_component_with_overview/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperFulfillPushStatus",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/fulfill_push_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryLiveWithShortId",
+      "method": "POST",
+      "path": "/api/platform/v2/data_analysis/query_live_with_short_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DataAnalysisQueryLiveRoom",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_live_room/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1ListKolOrder",
+      "method": "POST",
+      "path": "/api/solution/v1/list_kol_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QuerySmallHomeOrderData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_small_home_order_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperCreateAuthOrder",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/create_auth_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CapacityQueryApplyStatus",
+      "method": "GET",
+      "path": "/api/apps/v1/capacity/query_apply_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AddSimpleQrBind",
+      "method": "POST",
+      "path": "/api/apps/v2/capacity/add_simple_qr_bind/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeleteSimpleQrBind",
+      "method": "POST",
+      "path": "/api/apps/v2/capacity/delete_simple_qr_bind/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DataAnalysisQuerySceneData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_scene_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasQueryMerchantBalance",
+      "method": "POST",
+      "path": "/api/apps/ecpay/saas/query_merchant_balance/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QuerySmallHomeRoomData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_small_home_room_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthUserinfo",
+      "method": "POST",
+      "path": "/oauth/userinfo/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ShopMemberLeave",
+      "method": "POST",
+      "path": "/api/ecom/v1/shop_member/leave/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaasQueryWithdrawOrder",
+      "method": "POST",
+      "path": "/api/apps/ecpay/saas/query_withdraw_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperTagQuery",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/tag_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AppAddSubMerchant",
+      "method": "POST",
+      "path": "/api/apps/ecpay/v3/saas/app_add_sub_merchant/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeleteAwemeVideoKeyword",
+      "method": "POST",
+      "path": "/api/apps/v1/capacity/delete_aweme_video_keyword/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperRefundCreate",
+      "method": "POST",
+      "path": "/api/trade_basic/v1/developer/refund_create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryLiveDealData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_live_deal_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperQuerySignPay",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/query_sign_pay/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperTerminateSign",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/terminate_sign/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryLiveRoomData",
+      "method": "GET",
+      "path": "/api/platform/v2/data_analysis/query_live_room_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperCheckDeductPeriod",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/check_deduct_period/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ImagexClientUpload",
+      "method": "POST",
+      "path": "/tool/imagex/client_upload/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ImSetAppletTemplate",
+      "method": "POST",
+      "path": "/api/douyin/v1/im/set_applet_template/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeveloperCreateSignRefund",
+      "method": "POST",
+      "path": "/api/trade_auth/v1/developer/create_sign_refund/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AuthorizeUserList",
+      "method": "POST",
+      "path": "/im/authorize/user_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SaveRetainConsultCard",
+      "method": "POST",
+      "path": "/im/save/retain_consult_card/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CospaOutShot",
+      "method": "GET",
+      "path": "/data/extern/billboard/cospa/out_shot/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ActivityQueryInfo",
+      "method": "POST",
+      "path": "/dy_open_api/apps/v3/activity/query_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FoodOverall",
+      "method": "GET",
+      "path": "/data/extern/billboard/food/overall/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MusicOriginal",
+      "method": "GET",
+      "path": "/data/extern/billboard/music/original/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserFans",
+      "method": "GET",
+      "path": "/data/external/user/fans/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PostingUser",
+      "method": "POST",
+      "path": "/task/posting/user/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UploadImage",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/upload_image/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAgencyVideoSumData",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_agency_video_sum_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryViolateTalentList",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_violate_talent_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxQueryTaskInfo",
+      "method": "POST",
+      "path": "/api/match/v1/taskbox/query_task_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "HotelPoiQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/poi/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FansComment",
+      "method": "GET",
+      "path": "/data/extern/fans/comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SearchVideo",
+      "method": "GET",
+      "path": "/dy_open_api/v2/search/video/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SchemaGetItemInfo",
+      "method": "POST",
+      "path": "/api/douyin/v1/schema/get_item_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PostingBindVideo",
+      "method": "POST",
+      "path": "/task/posting/bind_video/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportOutdoors",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/outdoors/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CarUse",
+      "method": "GET",
+      "path": "/data/extern/billboard/car/use/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MusicSoar",
+      "method": "GET",
+      "path": "/data/extern/billboard/music/soar/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoCreateImageText",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/create_image_text/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CospaVoiceControl",
+      "method": "GET",
+      "path": "/data/extern/billboard/cospa/voice_control/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "InfoMatch",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/info/match/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AgencyQueryVideoSumData",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/agency_query_video_sum_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ActivityCreate",
+      "method": "POST",
+      "path": "/dy_open_api/apps/v3/activity/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetAgencyUserBindRecord",
+      "method": "POST",
+      "path": "/api/match/v1/taskbox/get_agency_user_bind_record/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoVideoList",
+      "method": "GET",
+      "path": "/api/douyin/v1/video/video_list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserItem",
+      "method": "GET",
+      "path": "/data/external/user/item/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AmusementNew",
+      "method": "GET",
+      "path": "/data/extern/billboard/amusement/new/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAgencyVideoDailyData",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_agency_video_daily_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportComprehensive",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/comprehensive/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CarOverall",
+      "method": "GET",
+      "path": "/data/extern/billboard/car/overall/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportFitness",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/fitness/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PassportOpenGetAccessCode",
+      "method": "POST",
+      "path": "/passport/open/get_access_code",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OauthStableClientToken",
+      "method": "POST",
+      "path": "/oauth/stable_client_token/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PostingCreate",
+      "method": "POST",
+      "path": "/task/posting/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryActivityUserCompletionStatus",
+      "method": "POST",
+      "path": "/dy_open_api/apps/v3/activity/query_activity_user_completion_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoVideoBasicInfo",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/video_basic_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AmusementOverall",
+      "method": "GET",
+      "path": "/data/extern/billboard/amusement/overall/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "StatusQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/status/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AgencyQueryBillLink",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/agency_query_bill_link/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ActivityModify",
+      "method": "POST",
+      "path": "/dy_open_api/apps/v3/activity/modify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BillboardProp",
+      "method": "GET",
+      "path": "/data/extern/billboard/prop/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportSoccer",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/soccer/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CarComment",
+      "method": "GET",
+      "path": "/data/extern/billboard/car/comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxGenAgentLink",
+      "method": "POST",
+      "path": "/api/match/v1/taskbox/gen_agent_link/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OpenGetticket",
+      "method": "GET",
+      "path": "/open/getticket/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoCreateVideo",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/create_video/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FoodNew",
+      "method": "GET",
+      "path": "/data/extern/billboard/food/new/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CospaOverall",
+      "method": "GET",
+      "path": "/data/extern/billboard/cospa/overall/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FansFavourite",
+      "method": "GET",
+      "path": "/data/extern/fans/favourite/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserComment",
+      "method": "GET",
+      "path": "/data/external/user/comment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BillboardStars",
+      "method": "GET",
+      "path": "/data/extern/billboard/stars/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DramaOverall",
+      "method": "GET",
+      "path": "/data/extern/billboard/drama/overall/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BillboardTopic",
+      "method": "GET",
+      "path": "/data/extern/billboard/topic/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FoodTutorial",
+      "method": "GET",
+      "path": "/data/extern/billboard/food/tutorial/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoUploadVideo",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/upload_video/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DelRetainConsultCard",
+      "method": "GET",
+      "path": "/im/del/retain_consult_card/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CarPlay",
+      "method": "GET",
+      "path": "/data/extern/billboard/car/play/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MusicHot",
+      "method": "GET",
+      "path": "/data/extern/billboard/music/hot/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoUploadVideoPart",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/upload_video_part/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TravelNew",
+      "method": "GET",
+      "path": "/data/extern/billboard/travel/new/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PhysicalRoomQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/physical_room/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CompleteVideoPartUpload",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/complete_video_part_upload/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserShare",
+      "method": "GET",
+      "path": "/data/external/user/share/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PassportOpenGetClientCode",
+      "method": "POST",
+      "path": "/passport/open/get_client_code",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RemaintimesDecr",
+      "method": "POST",
+      "path": "/market/service/user/remaintimes/decr/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportTableTennis",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/table_tennis/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PurchaseInfo",
+      "method": "POST",
+      "path": "/market/service/user/insert/purchase/info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DeletePurchaseInfo",
+      "method": "POST",
+      "path": "/market/service/user/delete/purchase/info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CospaPainting",
+      "method": "GET",
+      "path": "/data/extern/billboard/cospa/painting/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CospaQingMan",
+      "method": "GET",
+      "path": "/data/extern/billboard/cospa/qing_man/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "InitVideoPartUpload",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/init_video_part_upload/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SearchExperience",
+      "method": "GET",
+      "path": "/dy_open_api/v2/search/experience/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportBasketball",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/basketball/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserFansData",
+      "method": "GET",
+      "path": "/api/douyin/v1/user/fans_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PhysicalRoomSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/physical_room/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FoodShop",
+      "method": "GET",
+      "path": "/data/extern/billboard/food/shop/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VideoVideoData",
+      "method": "POST",
+      "path": "/api/douyin/v1/video/video_data/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GameConsole",
+      "method": "GET",
+      "path": "/data/extern/billboard/game/console/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportCulture",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/culture/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TravelOverall",
+      "method": "GET",
+      "path": "/data/extern/billboard/travel/overall/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FansSource",
+      "method": "GET",
+      "path": "/data/extern/fans/source/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CospaNew",
+      "method": "GET",
+      "path": "/data/extern/billboard/cospa/new/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserProfile",
+      "method": "GET",
+      "path": "/data/external/user/profile/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1AuthGetRelatedId",
+      "method": "POST",
+      "path": "/api/douyin/v1/auth/get_related_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GetRetainConsultCard",
+      "method": "GET",
+      "path": "/im/get/retain_consult_card/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SearchKeyword",
+      "method": "GET",
+      "path": "/poi/search/keyword/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FansCheck",
+      "method": "GET",
+      "path": "/fans/check/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryTaskVideoStatus",
+      "method": "POST",
+      "path": "/api/match/v2/taskbox/query_task_video_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GameInf",
+      "method": "GET",
+      "path": "/data/extern/billboard/game/inf/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ChangeUserBindAgent",
+      "method": "POST",
+      "path": "/api/match/v1/taskbox/change_user_bind_agent/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "Shareid",
+      "method": "GET",
+      "path": "/share-id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserLike",
+      "method": "GET",
+      "path": "/data/external/user/like/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CarDriver",
+      "method": "GET",
+      "path": "/data/extern/billboard/car/driver/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SportOverall",
+      "method": "GET",
+      "path": "/data/extern/billboard/sport/overall/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CospaBrainCavity",
+      "method": "GET",
+      "path": "/data/extern/billboard/cospa/brain_cavity/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "JsGetticket",
+      "method": "GET",
+      "path": "/js/getticket/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskboxSaveAgent",
+      "method": "POST",
+      "path": "/api/match/v1/taskbox/save_agent/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PurchaseList",
+      "method": "GET",
+      "path": "/market/service/user/purchase/list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAppTaskId",
+      "method": "POST",
+      "path": "/api/match/v1/taskbox/query_app_task_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CalendarOrderConfirm",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/calendar/order/confirm/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderAudit",
+      "method": "POST",
+      "path": "/goodlife/v1/akte/booking/order/audit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RetailOrderConfirm",
+      "method": "POST",
+      "path": "/goodlife/v1/retail/order/confirm/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AffiliatedSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/affiliated/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TripTicketQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/trip/ticket/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TransferCallback",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/transfer/callback/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TripCertificateVerify",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/certificate/verify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AkteCommentReply",
+      "method": "POST",
+      "path": "/goodlife/v1/akte/comment/reply/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GoodsSpuSave",
+      "method": "POST",
+      "path": "/goodlife/v2/goods/spu/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CalendarProductListCalendarAri",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/calendar_product/list_calendar_ari/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TripOrderConfirm",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/order/confirm/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RateplanSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/rateplan/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AffiliatedPoiSellOut",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/affiliated/poi_sell_out/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TicketCalendarSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/ticket_calendar/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CompleteConfirm",
+      "method": "POST",
+      "path": "/goodlife/v1/hermes/preparation/complete/confirm/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PromotionExit",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/promotion/exit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BillCateringQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/bill/catering_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AkteAfterSaleOrderQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/akte/after_sale/order/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/akte/booking/config/task/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ReportTaskCreate",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/report/task/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CrowdSave",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/crowd/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "StockSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/stock/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PricePush",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/promotion/price/push/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BookingConfig",
+      "method": "POST",
+      "path": "/goodlife/v1/akte/booking/config/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PresaleCouponSaveBookCalendarStock",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/presale_coupon/save/book_calendar_stock/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DylkOpenIdGet",
+      "method": "GET",
+      "path": "/goodlife/v1/open/common_biz/dylk_open_id/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AffiliatedOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/affiliated/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryContact",
+      "method": "POST",
+      "path": "/goodlife/v1/retail/order/query/contact/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "InvoiceNotify",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/invoice/notify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AkteOrderQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/akte/order/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BindSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/couponproduct/bind/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/order/poi/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RefundAudit",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/refund/audit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserChange",
+      "method": "POST",
+      "path": "/goodlife/v1/member/hotel/user/change/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ClaimQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/akte/merchant/claim/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ServeQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/order/serve/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AriNotify",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/ari/notify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "HotelUserUpdate",
+      "method": "POST",
+      "path": "/goodlife/v1/member/hotel/user/update/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiScroll",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/poi/scroll/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PriceSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/price/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PromotionInfoQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/promotion_info/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskView",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/match/task/view/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CreateCallback",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/create/callback/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AffiliatedDetail",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/foodorder/affiliated/detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DetailTrip",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/bill/detail/trip/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CommentQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/akte/comment/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "LedgerDetailedQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/ledger/detailed_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FoodorderProductOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/product/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BindDetail",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/foodorder/couponproduct/bind/detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "HermesTradeOrderQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/hermes/trade/order/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ReportTaskView",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/report/task/view/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BookingAuditNotify",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/hotel/booking/audit/notify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TicketSubmit",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/claim/appeal/ticket/submit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RetailOrderQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/retail/order/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AfterSaleOrderAudit",
+      "method": "POST",
+      "path": "/goodlife/v1/akte/after_sale/order/audit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "InventoryPush",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/promotion/inventory/push/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "HotelSavepresale",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/savepresale/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserLogout",
+      "method": "POST",
+      "path": "/goodlife/v1/member/hotel/user/logout/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiproductOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/poiproduct/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TravelagencyProductOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/product_operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CalendarAri",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/calendar_product/save/calendar/ari/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AuditNotify",
+      "method": "POST",
+      "path": "/goodlife/v1/after_sale/audit/notify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderMerchantReject",
+      "method": "POST",
+      "path": "/goodlife/v1/after_sale/order/merchant_reject/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PresaleRateplanSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/presale/rateplan/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TicketSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/ticket/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "StockUpdateNotify",
+      "method": "POST",
+      "path": "/goodlife/v1/akte/booking/stock_update/notify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TicketCalendarBatchSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/ticket_calendar/batch_save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MerchantClaimSubmit",
+      "method": "POST",
+      "path": "/goodlife/v1/akte/merchant/claim/submit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "WithdrawCateringQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/withdraw/catering_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertificateCallback",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/scenic/groupon/certificate/callback/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PromotionPush",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/promotion/push/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ScoreQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/akte/comment/score/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PhysicalRoomSearch",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/physical_room/search/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ServeSubmit",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/order/serve/submit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SpuGet",
+      "method": "GET",
+      "path": "/goodlife/v2/goods/spu/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiSellOutDetail",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/foodorder/affiliated/poi_sell_out/detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderSyncStatus",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/distribution/order/sync_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BookingOrderFulfillment",
+      "method": "POST",
+      "path": "/goodlife/v1/akte/booking/order/fulfillment/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertificateCancel",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/certificate/cancel/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductDetail",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/foodorder/product/detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderConfirm",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/order/confirm/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryAri",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/presale_coupon/query/ari/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "HotelOrderConfirm",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/hotel/order/confirm/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FoodorderProductSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/product/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BuyMerchantConfirmOrder",
+      "method": "POST",
+      "path": "/goodlife/v1/trade/buy/merchant_confirm_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskCreate",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/match/task/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GoodsSpuOperate",
+      "method": "POST",
+      "path": "/goodlife/v2/goods/spu/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PhysicalRoomOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/physical_room/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RulePush",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/promotion/price/rule/push/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RefundApply",
+      "method": "POST",
+      "path": "/goodlife/v1/retail/order/refund/apply/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TripProductOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/product/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CancelAudit",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/hotel/cancel/audit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TripRefundAudit",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/refund/audit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SyncStatus",
+      "method": "POST",
+      "path": "/goodlife/v1/retail/order/sync/status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SavePresaleAri",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/trade/travelagency/presale_coupon/save/presale/ari/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AfterSaleOrderDetailGet",
+      "method": "GET",
+      "path": "/goodlife/v1/akte/after_sale/order_detail/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiproductDetail",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/foodorder/poiproduct/detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TicketQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/claim/appeal/ticket/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RetailOrderRefundAudit",
+      "method": "POST",
+      "path": "/goodlife/v1/retail/order/refund/audit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishGroupQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/x_dish/dish_group/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderApplyRefund",
+      "method": "POST",
+      "path": "/goodlife/v1/after_sale/order/apply_refund/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductUpdateStock",
+      "method": "POST",
+      "path": "/goodlife/v1/x_goods/product/update_stock/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductDraftList",
+      "method": "GET",
+      "path": "/goodlife/v1/x_goods/product/draft/list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiSync",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/poi/sync/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductCommissionMget",
+      "method": "POST",
+      "path": "/goodlife/v1/partner/product_commission/mget/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1GoodsStockSync",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/stock/sync/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfilmentCertificateQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/compre_retail/fulfilment/certificate/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ShopPoiQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/shop/poi/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertificateQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/fulfilment/certificate/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductOnlineGet",
+      "method": "GET",
+      "path": "/goodlife/v2/x_goods/product/online/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OnlineGet",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/product/online/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertInfo",
+      "method": "GET",
+      "path": "/goodlife/v1/poi/cert/info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GoodsProductOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/product/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfilmentCertificatePrepare",
+      "method": "GET",
+      "path": "/goodlife/v1/compre_retail/fulfilment/certificate/prepare/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TradeOrderConfirm",
+      "method": "POST",
+      "path": "/goodlife/v1/comprehensive/trade/order/confirm/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GoodsSkuBatchSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/sku/batch_save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderGet",
+      "method": "GET",
+      "path": "/goodlife/v1/partner/order/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "LedgerQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/ledger/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfilmentCertificateCancel",
+      "method": "POST",
+      "path": "/goodlife/v1/compre_retail/fulfilment/certificate/cancel/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BindInfoAll",
+      "method": "GET",
+      "path": "/goodlife/v2/craftsman_openapi/merchat/craftsman/bind_info/all/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishSyncTaskCreate",
+      "method": "POST",
+      "path": "/goodlife/v1/x_dish/dish_sync_task/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskSubmit",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/match/task/submit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CommissionRecordQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/partner/commission_record/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SkuUpsert",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/comprehensive/reception/stock/sku/upsert/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BillQueryRebateUrl",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/bill/query_rebate_url/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BindInfoSingle",
+      "method": "GET",
+      "path": "/goodlife/v2/craftsman_openapi/merchat/craftsman/bind_info/single/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductSave",
+      "method": "POST",
+      "path": "/goodlife/v1/x_goods/product/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertificateGet",
+      "method": "GET",
+      "path": "/goodlife/v1/fulfilment/certificate/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/partner/order/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductGetPois",
+      "method": "GET",
+      "path": "/goodlife/v1/x_goods/product/get_pois/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TemplateGet",
+      "method": "GET",
+      "path": "/goodlife/v1/x_goods/template/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishSort",
+      "method": "POST",
+      "path": "/goodlife/v1/x_dish/dish/sort/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OnlineList",
+      "method": "GET",
+      "path": "/goodlife/v1/x_goods/dish/online/list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GoodsProductDraftGet",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/product/draft/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ClueQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/open_api/crm/clue/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiDecorate",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/poi/decorate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishSaveSubmit",
+      "method": "POST",
+      "path": "/goodlife/v1/x_dish/dish/save_submit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishSyncTaskRecord",
+      "method": "GET",
+      "path": "/goodlife/v1/x_dish/dish_sync_task/record/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishSaveOutId",
+      "method": "POST",
+      "path": "/goodlife/v1/x_dish/dish/save_out_id/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiSellOutSave",
+      "method": "POST",
+      "path": "/goodlife/v1/x_goods/product/poi_sell_out/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishBindGet",
+      "method": "GET",
+      "path": "/goodlife/v1/x_dish/dish_bind/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishOnlineGet",
+      "method": "GET",
+      "path": "/goodlife/v1/x_goods/dish/online/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishUpdateStock",
+      "method": "POST",
+      "path": "/goodlife/v1/x_goods/dish/update_stock/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryOrder",
+      "method": "POST",
+      "path": "/goodlife/v1/comprehensive/trade/query/order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DetailedQueryByOrder",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/ledger/detailed_query_by_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GoodsProductFreeAudit",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/product/free_audit/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductUpdateStatus",
+      "method": "POST",
+      "path": "/goodlife/v1/x_goods/product/update_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "LedgerQueryByOrder",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/ledger/query_by_order/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoistockSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/pickupcoupon/poistock/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishGroupSort",
+      "method": "POST",
+      "path": "/goodlife/v1/x_dish/dish_group/sort/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QualSearch",
+      "method": "POST",
+      "path": "/goodlife/v1/account/qual/search/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "VerifyRecordQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/fulfilment/certificate/verify_record/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SkuGet",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/sku/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishGroupSave",
+      "method": "POST",
+      "path": "/goodlife/v1/x_dish/dish_group/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "WithdrawCompositeQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/withdraw/composite_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "UserUpdate",
+      "method": "POST",
+      "path": "/goodlife/v1/member/user/update/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CouponPriceQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/product/coupon_price/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "MatchTaskQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/poi/match/task/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "RelationQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/poi/match/relation/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiClaim",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/poi/claim/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertificateVerify",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/certificate/verify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductOnlineList",
+      "method": "GET",
+      "path": "/goodlife/v2/x_goods/product/online/list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiTaskQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/poi/task/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductCommissionSave",
+      "method": "POST",
+      "path": "/goodlife/v1/partner/product_commission/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TrafficVerify",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/certificate/traffic/verify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductCommissionQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/partner/product_commission/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfilmentCreateCallback",
+      "method": "POST",
+      "path": "/goodlife/v1/compre_retail/fulfilment/create/callback/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FileUpload",
+      "method": "POST",
+      "path": "/goodlife/v1/entrance/file/upload/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TradeOrderQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/trade/order/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductOnlineQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/product/online/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoiUpdate",
+      "method": "POST",
+      "path": "/goodlife/v1/poi/poi/update/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QueryRecordByCert",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/ledger/query_record_by_cert/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishOperateStatus",
+      "method": "POST",
+      "path": "/goodlife/v1/x_goods/dish/operate_status/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductDraftQuery",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/product/draft/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FulfilmentCertificateVerify",
+      "method": "POST",
+      "path": "/goodlife/v1/compre_retail/fulfilment/certificate/verify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GoodsTemplateGet",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/template/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertificateBatchVerify",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/certificate/batch_verify/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DishDraftGet",
+      "method": "GET",
+      "path": "/goodlife/v1/x_dish/dish/draft/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "PoistockDetail",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/pickupcoupon/poistock/detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "BillQueryLegerUrl",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/bill/query_leger_url/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CommissionRecordGet",
+      "method": "GET",
+      "path": "/goodlife/v1/partner/commission_record/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "CertificatePrepare",
+      "method": "GET",
+      "path": "/goodlife/v1/fulfilment/certificate/prepare/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "DraftGet",
+      "method": "GET",
+      "path": "/goodlife/v1/x_goods/product/draft/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "LinkGet",
+      "method": "POST",
+      "path": "/goodlife/v1/entrance/h5/link/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductUpdatePrice",
+      "method": "POST",
+      "path": "/goodlife/v1/x_goods/product/update_price/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ProductCommissionGet",
+      "method": "GET",
+      "path": "/goodlife/v1/partner/product_commission/get/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "OrderCreate",
+      "method": "POST",
+      "path": "/goodlife/v1/partner/order/create/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "V1GoodsProductSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/product/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AppsStableToken",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/stable_token",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "LinkmicQuery",
+      "method": "POST",
+      "path": "/api/linkmic/query",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "RoundSyncStatus",
+      "method": "POST",
+      "path": "/api/gaming_con/round/sync_status",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "AppsRemoveUserStorage",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/remove_user_storage",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "WebcastmateInfo",
+      "method": "POST",
+      "path": "/api/webcastmate/info",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "FansClubGetInfo",
+      "method": "GET",
+      "path": "/api/live_data/fans_club/get_info",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "ReserveCodeBatchImport",
+      "method": "POST",
+      "path": "/goodlife/v1/fulfilment/reserve_code/batch_import/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SpuSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/spu/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "GiftReceiveReward",
+      "method": "POST",
+      "path": "/mgplatform/api/gift/receive_reward",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "FailDataGet",
+      "method": "GET",
+      "path": "/api/live_data/task/fail_data/get",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "AppsJscode2session",
+      "method": "GET",
+      "path": "/mgplatform/api/apps/jscode2session",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "WorldRankUploadUserResult",
+      "method": "POST",
+      "path": "/api/gaming_con/world_rank/upload_user_result",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "AppsUrlLinkGenerate",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/url_link/generate",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "RoundUploadRankList",
+      "method": "POST",
+      "path": "/api/gaming_con/round/upload_rank_list",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "CommissionRatePlanIdQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/commission_rate/plan_id_query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "WorldRankUploadRankList",
+      "method": "POST",
+      "path": "/api/gaming_con/world_rank/upload_rank_list",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "AnchorLinkmicUpdateVoice",
+      "method": "POST",
+      "path": "/api/gaming_con/anchor_linkmic/update_voice",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "TaskStart",
+      "method": "POST",
+      "path": "/api/live_data/task/start",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "PoipriceSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/poiprice/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "QuizGet",
+      "method": "GET",
+      "path": "/api/quiz/get",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "GetUserGroupTag",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/group_tag/get_user_group_tag",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "DraftList",
+      "method": "GET",
+      "path": "/goodlife/v1/x_dish/dish/draft/list/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "FoodorderPoistockSave",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/poistock/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AppsSetUserStorage",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/set_user_storage",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "ShareCreateActivityId",
+      "method": "GET",
+      "path": "/mgplatform/api/apps/share/create_activity_id",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "RoundUploadUserResult",
+      "method": "POST",
+      "path": "/api/gaming_con/round/upload_user_result",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "SchemaQueryQuota",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/schema/query_quota",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "AnchorLinkmicPrepare",
+      "method": "POST",
+      "path": "/api/gaming_con/anchor_linkmic/prepare",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "CommissionRateSave",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/commission_rate/save/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SpuDetail",
+      "method": "GET",
+      "path": "/goodlife/v1/goods/foodorder/spu/detail/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "TaskGet",
+      "method": "GET",
+      "path": "/api/live_data/task/get",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "SchemaGenerate",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/schema/generate",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "AppsUrlLinkQueryQuota",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/url_link/query_quota",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "AppsV2Token",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/v2/token",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "ReplyReplyUserText",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/reply/reply_user_text",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "RoundCompleteUploadUserResult",
+      "method": "POST",
+      "path": "/api/gaming_con/round/complete_upload_user_result",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "V1Notify",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/subscribe_notification/developer/v1/notify",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "SpuOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/goods/foodorder/spu/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AppsCheckSessionKey",
+      "method": "GET",
+      "path": "/mgplatform/api/apps/check_session_key",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "AnchorLinkmicCreate",
+      "method": "POST",
+      "path": "/api/gaming_con/anchor_linkmic/create",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "QueryRecordBySubfulfil",
+      "method": "GET",
+      "path": "/goodlife/v1/settle/bill/query_record_by_subfulfil/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "ShareUpdateDynamicMessage",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/share/update_dynamic_message",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "CommissionRateQuery",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/commission_rate/query/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "SchemaQueryInfo",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/schema/query_info",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "LiveDataAck",
+      "method": "POST",
+      "path": "/api/live_data/ack",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "ShareUnbindUnionGroup",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/share/unbind_union_group",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "WorldRankSetValidVersion",
+      "method": "POST",
+      "path": "/api/gaming_con/world_rank/set_valid_version",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "CompleteUploadUserResult",
+      "method": "POST",
+      "path": "/api/gaming_con/world_rank/complete_upload_user_result",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "CommissionRateOperate",
+      "method": "POST",
+      "path": "/goodlife/v1/trip/hotel/commission_rate/operate/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AnchorLinkmicQuery",
+      "method": "POST",
+      "path": "/api/gaming_con/anchor_linkmic/query",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "AppsResetSessionKey",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/reset_session_key",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "CoGameUploadUserData",
+      "method": "POST",
+      "path": "/api/gaming_con/round/co_game_upload_user_data",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "SetUserGroupTag",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/group_tag/set_user_group_tag",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "ReserveCodeBindOrderInfo",
+      "method": "GET",
+      "path": "/goodlife/v1/fulfilment/reserve_code/bind_order_info/",
+      "domain": "https://open.douyin.com"
+    },
+    {
+      "operation": "AppsUrlLinkQueryInfo",
+      "method": "POST",
+      "path": "/mgplatform/api/apps/url_link/query_info",
+      "domain": "https://minigame.zijieapi.com"
+    },
+    {
+      "operation": "UploadUserGroupInfo",
+      "method": "POST",
+      "path": "/api/gaming_con/round/upload_user_group_info",
+      "domain": "https://webcast.bytedance.com"
+    },
+    {
+      "operation": "RoundInfo",
+      "method": "GET",
+      "path": "/api/business/round/info",
+      "domain": "https://webcast.bytedance.com"
+    }
+  ]
+}

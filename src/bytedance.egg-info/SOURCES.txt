@@ -2,7 +2,14 @@ README.rst
 setup.py
 bytedance/__init__.py
 bytedance/base.py
+bytedance/client.py
+bytedance/contracts.json
+bytedance/generated.py
+bytedance/legacy.py
+bytedance/security.py
+bytedance/tokens.py
 bytedance.egg-info/PKG-INFO
 bytedance.egg-info/SOURCES.txt
 bytedance.egg-info/dependency_links.txt
+bytedance.egg-info/requires.txt
 bytedance.egg-info/top_level.txt

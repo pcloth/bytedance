@@ -1,0 +1,7 @@
+requests<3,>=2.27.1
+
+[crypto]
+cryptography>=3.4.8
+
+[redis]
+redis<6,>=3.5.3

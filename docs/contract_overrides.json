@@ -1,0 +1,374 @@
+{
+  "locallife/general-ability/agency-trade-system/settlement/query-settle": {
+    "reason": "Published schema omits Domain; use the open.douyin.com domain documented by the matching self-operated settlement interface and agency common parameters.",
+    "patch": {
+      "domain": "https://open.douyin.com",
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      }
+    }
+  },
+  "basic-abilities/data-open/user-homepage-data/get-item-bc": {
+    "reason": "Verified from the public official document through browser extraction; direct HTML currently returns an empty shell. Checked 2026-10-23.",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/user_bc/get_item/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "business"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/data-open/user-homepage-data/get-like-bc": {
+    "reason": "Verified from the public official document through browser extraction; direct HTML currently returns an empty shell. Checked 2026-10-23.",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/user_bc/get_like/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "business"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/data-open/user-homepage-data/get-share-bc": {
+    "reason": "Verified from the public official document through browser extraction; direct HTML currently returns an empty shell. Checked 2026-10-23.",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/user_bc/get_share/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "business"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/aweme-bind/query-aweme-relation-list": {
+    "reason": "Verified from the public official document through browser extraction; direct HTML currently returns an empty shell. Checked 2026-10-23.",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/capacity/query_aweme_relation_list/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "authorizer"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/aweme-bind/unbind-aweme-relation": {
+    "reason": "Verified from the public official document through browser extraction; direct HTML currently returns an empty shell. Checked 2026-10-23.",
+    "contract": {
+      "method": "POST",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/capacity/unbind_aweme_relation/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "authorizer"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/aweme-bind/get-aweme-relation-bind-qrcode": {
+    "reason": "Official browser-extracted contract verified 2026-10-23; direct HTML is empty.",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/capacity/get_aweme_relation_bind_qrcode/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "authorizer"
+      },
+      "error_paths": [
+        "err_no"
+      ]
+    }
+  },
+  "basic-abilities/interface-request-credential/business-token/query-business": {
+    "reason": "Official request example explicitly uses bus_act token.",
+    "patch": {
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "business"
+      }
+    }
+  },
+  "payment/trade-system/trading/refund/notify-result": {
+    "kind": "callback",
+    "protocol": "trade",
+    "reason": "Platform-to-developer refund callback; version 2.0 uses RSA, older ecpay orders use ecpay callback verification."
+  },
+  "basic-abilities/merchant-coupon/coupon-mgmt/coupon-callback": {
+    "kind": "callback",
+    "protocol": "trade",
+    "reason": "Official callback header uses Byte-Signature and requires the platform public key."
+  },
+  "basic-abilities/merchant-coupon/coupon-mgmt/authorized-phone-callback": {
+    "kind": "callback",
+    "protocol": "trade",
+    "reason": "Coupon callback uses the platform public-key verification protocol."
+  },
+  "basic-abilities/data-open/user-homepage-data/get-profile-bc": {
+    "reason": "Verified from the public official document through browser extraction; direct HTML currently returns an empty shell. Checked 2026-10-23.",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/user_bc/get_profile/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "business"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/data-open/user-homepage-data/get-fens-bc": {
+    "reason": "Verified public official document HTTP URL and Method, via official indexed document on 2026-10-23.",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/user_bc/get_fans/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "business"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/aweme-bind/bind-aweme-relation": {
+    "reason": "Verified public official document HTTP URL and Method, via official indexed document on 2026-10-23.",
+    "contract": {
+      "method": "POST",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/capacity/bind_aweme_relation/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "authorizer"
+      },
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "basic-abilities/data-open/user-homepage-data/get-comment-bc": {
+    "reason": "Official documentation page is empty; cross-checked Method, host, path and token header in the official Go SDK UserBcGetComment. Pass token explicitly for the import-card APIs.",
+    "evidence": "https://raw.githubusercontent.com/bytedance/douyin-openapi-sdk-go/main/client/client.go",
+    "contract": {
+      "method": "GET",
+      "domain": "https://open.douyin.com",
+      "path": "/api/apps/v1/user_bc/get_comment/",
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "business"
+      },
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "reach-marketing/mount/webcast_import_card/find-webcast-import-card": {
+    "reason": "Official documentation page is empty; cross-checked Method, host, path and token header in the official Go SDK ImportCardGet. Pass token explicitly for the import-card APIs.",
+    "evidence": "https://raw.githubusercontent.com/bytedance/douyin-openapi-sdk-go/main/client/client.go",
+    "contract": {
+      "method": "POST",
+      "domain": "https://open.douyin.com",
+      "path": "/aweme/app/v1/import_card/get/",
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "explicit"
+      },
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "reach-marketing/mount/webcast_import_card/set-webcast-import-card": {
+    "reason": "Official documentation page is empty; cross-checked Method, host, path and token header in the official Go SDK ImportCardAdd. Pass token explicitly for the import-card APIs.",
+    "evidence": "https://raw.githubusercontent.com/bytedance/douyin-openapi-sdk-go/main/client/client.go",
+    "contract": {
+      "method": "POST",
+      "domain": "https://open.douyin.com",
+      "path": "/aweme/app/v1/import_card/add/",
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "explicit"
+      },
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "error_paths": [
+        "err_no",
+        "data.extra.error_code"
+      ]
+    }
+  },
+  "operation/data-analysis/video-analysis/video-detail-analysis-data": {
+    "reason": "Directory page is empty; official legacy live-analysis document describes the shared short-video/live detail endpoint, including query_data_type=4/5.",
+    "evidence": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/server/data-analysis/live-analysis/room-detail-analysis-data",
+    "contract": {
+      "method": "POST",
+      "domain": "https://open.douyin.com",
+      "path": "/api/platform/v2/data_analysis/query_short_live_data_with_id/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      },
+      "error_paths": [
+        "err_no"
+      ]
+    }
+  },
+  "operation/data-analysis/live-analysis/room-detail-analysis-data": {
+    "reason": "Directory page is empty; official legacy live-analysis document describes the shared short-video/live detail endpoint, including query_data_type=4/5.",
+    "evidence": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/server/data-analysis/live-analysis/room-detail-analysis-data",
+    "contract": {
+      "method": "POST",
+      "domain": "https://open.douyin.com",
+      "path": "/api/platform/v2/data_analysis/query_short_live_data_with_id/",
+      "sandbox": false,
+      "encoding": "json",
+      "defaults": {},
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      },
+      "error_paths": [
+        "err_no"
+      ]
+    }
+  },
+  "payment/trade-system/general/withdraw/saas/add-merchant": {
+    "reason": "Same v3 endpoint as the structured merchant onboarding API; use its client-token access-token header. The old withdrawal article contains a conflicting header spelling.",
+    "patch": {
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      }
+    }
+  },
+  "payment/trade-system/general/withdraw/saas/add-sub-merchant": {
+    "reason": "Same v3 endpoint as the structured merchant onboarding API; use its client-token access-token header. The old withdrawal article contains a conflicting header spelling.",
+    "patch": {
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      }
+    }
+  },
+  "payment/trade-system/general/withdraw/saas/app-add-sub-merchant": {
+    "reason": "Same v3 endpoint as the structured merchant onboarding API; use its client-token access-token header. The old withdrawal article contains a conflicting header spelling.",
+    "patch": {
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      }
+    }
+  },
+  "payment/trade-system/general/withdraw/saas/get-app-merchant": {
+    "reason": "Same v3 endpoint as the structured merchant onboarding API; use its client-token access-token header. The old withdrawal article contains a conflicting header spelling.",
+    "patch": {
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      }
+    }
+  },
+  "locallife/free-group-sol/refund-audit": {
+    "reason": "Same HTTP endpoint as the merchant-audit document, which specifies client_token in access-token.",
+    "patch": {
+      "auth": {
+        "in": "header",
+        "name": "access-token",
+        "kind": "client"
+      }
+    }
+  },
+  "reach-marketing/search/query-ma-sub-service": {
+    "reason": "Current official page and endpoint metadata specify POST; the official Go SDK snapshot still uses GET. Follow the current document.",
+    "official_sdk_method_difference": "POST"
+  }
+}

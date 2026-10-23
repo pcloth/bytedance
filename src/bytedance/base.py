@@ -1,54 +1,62 @@
 # -*- coding: utf-8 -*-
-
-
+"""Shared errors and backwards compatible dictionary attribute access."""
 __all__ = ("Map", "ByteDanceError")
 
 
 class ByteDanceError(Exception):
-    def __init__(self, msg):
+    def __init__(self, msg, code=None, log_id=None, response=None,
+                 status_code=None, payload=None):
         super(ByteDanceError, self).__init__(msg)
+        self.code = code
+        self.log_id = log_id
+        self.response = response
+        self.status_code = status_code
+        self.payload = payload
 
 
 class Map(dict):
-    """
-    提供字典的dot访问模式
-    Example:
-    m = Map({'first_name': 'Eduardo'}, last_name='Pool', age=24, sports=['Soccer'])
+    """Dictionary with dot access, including dictionaries nested in lists.
+
+    Missing item/attribute access retains the historical empty-Map behavior.
+    Use .get() or membership tests when inspecting optional protocol fields.
+    Standard dict methods take precedence over same-named JSON attributes.
     """
     def __init__(self, *args, **kwargs):
-        super(Map, self).__init__(*args, **kwargs)
-        for arg in args:
-            if isinstance(arg, dict):
-                for k, v in arg.items():
-                    if isinstance(v, dict):
-                        v = Map(v)
-                    self[k] = v
+        super(Map, self).__init__()
+        self.update(*args, **kwargs)
 
-        if kwargs:
-            for k, v in kwargs.items():
-                if isinstance(v, dict):
-                    v = Map(v)
-                self[k] = v
+    @staticmethod
+    def _convert(value):
+        if isinstance(value, dict) and not isinstance(value, Map):
+            return Map(value)
+        if isinstance(value, list):
+            return [Map._convert(item) for item in value]
+        return value
 
-    def __getattr__(self, attr):
-        return self[attr]
+    def __missing__(self, key):
+        value = Map()
+        self[key] = value
+        return value
 
-    def __setattr__(self, key, value):
-        self.__setitem__(key, value)
+    def __getattr__(self, name):
+        if name.startswith("__"):
+            raise AttributeError(name)
+        return self[name]
 
-    def __getitem__(self, key):
-        if key not in self.__dict__:
-            super(Map, self).__setitem__(key, {})
-            self.__dict__.update({key: Map()})
-        return self.__dict__[key]
+    def __setattr__(self, name, value):
+        self[name] = value
+
+    def __delattr__(self, name):
+        del self[name]
 
     def __setitem__(self, key, value):
-        super(Map, self).__setitem__(key, value)
-        self.__dict__.update({key: value})
+        super(Map, self).__setitem__(key, self._convert(value))
 
-    def __delattr__(self, item):
-        self.__delitem__(item)
+    def update(self, *args, **kwargs):
+        for key, value in dict(*args, **kwargs).items():
+            self[key] = value
 
-    def __delitem__(self, key):
-        super(Map, self).__delitem__(key)
-        del self.__dict__[key]
+    def setdefault(self, key, default=None):
+        if key not in self:
+            self[key] = default
+        return dict.__getitem__(self, key)
