@@ -30,7 +30,9 @@ Python 3.6/3.8 使用已下载的 Docker 官方 Python 镜像运行时，Python 
 
 ## 更新后的交付文件
 
-- `bytedance-1.0.0-py3-none-any.whl`，SHA-256：`0ab8b03c516ba8a5dfd71f4dd364e8e2f1e66ccdf21fe7302020114c5613dc1b`
-- `bytedance-1.0.0.tar.gz`，SHA-256：`4cae15b6dec824db9a368a52002ff2fb6308a60b9045860876656a7c49c48486`
+2026-10-24 发布准备补验：修正 RST README 标题下划线长度，重新构建以下两个文件，均通过 `twine check --strict`。重建后的 wheel 在本机 Python 3.12 的临时安装目录通过 55 项测试；SDK 运行源码及契约数据未变化，仍与源码包和 wheel 逐文件一致。详见 [发布步骤](PUBLISH.md)。
+
+- `bytedance-1.0.0-py3-none-any.whl`，SHA-256：`f09522ac66754117667e3bbb57f7950398089d34fe938237f522c5484f0ba2b4`
+- `bytedance-1.0.0.tar.gz`，SHA-256：`66b9ad47ff327f91ecb402e2258a41df2185e98cb69ef43370964e57c7871f3a`
 
 版本保留为 1.0.0，尚未发布到 PyPI。未提供真实测试应用凭证，未调用平台业务接口联调；Redis 行为使用离线替身验证，未连接真实 Redis。

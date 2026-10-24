@@ -25,7 +25,7 @@ Provides-Extra: crypto
 Provides-Extra: redis
 
 字节跳动 / 抖音小程序 Python SDK
-==============================
+============================================================
 
 bytedance 1.0.0，支持 Python 3.6 及以上版本。
 
