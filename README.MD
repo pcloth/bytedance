@@ -6,10 +6,12 @@
 
 ## 安装
 
-`1.0.0` 尚未发布到 PyPI，当前请使用本地源码或 `dist/` 下的 wheel。发布后的常规安装方式及本地安装命令如下。
+`1.0.0` 已发布到 [PyPI](https://pypi.org/project/bytedance/1.0.0/)，可直接使用 pip 安装。
 
 ```sh
 pip install bytedance
+# 从旧版本升级
+pip install --upgrade bytedance
 # 按需安装共享凭证缓存、RSA/AES 能力
 pip install 'bytedance[redis,crypto]'
 # 本地开发

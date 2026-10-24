@@ -9,6 +9,8 @@ bytedance 1.0.0，支持 Python 3.6 及以上版本。
 安装
 ----
 
+1.0.0 已发布到 `PyPI <https://pypi.org/project/bytedance/1.0.0/>`_。
+
 .. code-block:: sh
 
    pip install bytedance

@@ -35,4 +35,6 @@ Python 3.6/3.8 使用已下载的 Docker 官方 Python 镜像运行时，Python 
 - `bytedance-1.0.0-py3-none-any.whl`，SHA-256：`f09522ac66754117667e3bbb57f7950398089d34fe938237f522c5484f0ba2b4`
 - `bytedance-1.0.0.tar.gz`，SHA-256：`66b9ad47ff327f91ecb402e2258a41df2185e98cb69ef43370964e57c7871f3a`
 
-版本保留为 1.0.0，尚未发布到 PyPI。未提供真实测试应用凭证，未调用平台业务接口联调；Redis 行为使用离线替身验证，未连接真实 Redis。
+`1.0.0` 已于 2026-10-24 发布到 [PyPI](https://pypi.org/project/bytedance/1.0.0/)，发布后通过 PyPI JSON API 核对的两个文件 SHA-256 与上述记录一致。本次文档更新未重新执行从 PyPI 安装验证，以上测试记录对应发布前的源码和构建文件。
+
+未提供真实测试应用凭证，未调用平台业务接口联调；Redis 行为使用离线替身验证，未连接真实 Redis。
